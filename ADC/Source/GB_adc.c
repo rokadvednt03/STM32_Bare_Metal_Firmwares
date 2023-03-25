@@ -38,7 +38,7 @@ void adc_init()
 
     ADC1->CR1 &= ~(ADC_CR1_SCAN); // SCAN DISABLED
     ADC1->CR1 &= ~(ADC_CR1_JDISCEN | ADC_CR1_DISCEN); // Discontinous mode disabled for both injected and regular groups
-    ADC1->CR1 &= ~(ADC_CR1_DISCNUM_2 | ADC_CR1_DISCNUM_1 | ADC_CR1_DISCNUM_2 ); // no channels are configured in discontinous way.                                                 // if  discontinous mode is enabled then number of
+    ADC1->CR1 &= ~(ADC_CR1_DISCNUM_0 | ADC_CR1_DISCNUM_1 | ADC_CR1_DISCNUM_2 ); // no channels are configured in discontinous way.                                                 // if  discontinous mode is enabled then number of
                                                        //conversions to be done by discontinous mode has to be configured
                                                       // DISNUM bits
     ADC1->CR1 &= ~(ADC_CR1_DUALMOD_0 | ADC_CR1_DUALMOD_1 | ADC_CR1_DUALMOD_2); // INDEPENDENT MODE SELECTED
